@@ -36,9 +36,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'django-insecure-8yw*at!j)jbr5txmttym1(2ckcg5ui3w-y)p31ui%0w+bmh575'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = SECRET_DEBUG
+DEBUG = False
 
-ALLOWED_HOSTS = SECRET_ALLOWED_HOSTS
+ALLOWED_HOSTS = ['*']
 
 # 'Sites Framework' requires this line.
 SITE_ID = 1
@@ -128,12 +128,12 @@ DATABASES = {
 # http://stackoverflow.com/questions/19264907/python-django-gmail-smtp-setup
 
 EMAIL_USE_TLS = True
-EMAIL_HOST = SECRET_EMAIL_HOST
-EMAIL_PORT = SECRET_EMAIL_PORT
-EMAIL_HOST_USER = SECRET_EMAIL_HOST_USER
-EMAIL_HOST_PASSWORD = SECRET_EMAIL_HOST_PASSWORD
-DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
-DEFAULT_TO_EMAIL = EMAIL_HOST_USER
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = '18pavansai@gmail.com'
+EMAIL_HOST_PASSWORD = 'SECRET_EMAIL_HOST_PASSWORD'
+DEFAULT_FROM_EMAIL = '18pavansai@gmail.com'
+DEFAULT_TO_EMAIL = 'bpavinsai1998@gmail.com'
 
 
 
@@ -142,7 +142,7 @@ DEFAULT_TO_EMAIL = EMAIL_HOST_USER
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'America/Toronto'
+TIME_ZONE = 'Asia/Kolkata'
 
 USE_I18N = True
 
